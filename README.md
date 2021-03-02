@@ -133,12 +133,12 @@ In **BiBtex**:
 
 ```
  @inproceedings{marquis2021,
-  	title={Automatic Honey Bee Queen Presence Detection on Beehive Frames Using Machine Learning},
-  	author={Marquis, Marie-Pier and Yaddaden, Yacine and Adda, Mehdi and Gingras, Guillaume and Coriveau-Côté, Michael},
-  	booktitle={The 11th International Conference on Robotics, Vision, Signal Processing, and Power Applications (RoViSP)},
-  	pages={1--6},
-  	year={2021},
-  	organization={Springer}
+  title={Automatic Honey Bee Queen Presence Detection on Beehive Frames Using Machine Learning},
+  author={Marquis, Marie-Pier and Yaddaden, Yacine and Adda, Mehdi and Gingras, Guillaume and Coriveau-Côté, Michael},
+  booktitle={The 11th International Conference on Robotics, Vision, Signal Processing, and Power Applications (RoViSP)},
+  pages={1--6},
+  year={2021},
+  organization={Springer}
  }
 ```
 
