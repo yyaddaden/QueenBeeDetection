@@ -21,7 +21,7 @@
 
 The proposed sysem might be described by the following figure:
 
-![diagram_of_the_proposed_method](images/diagram.png)
+![diagram_of_the_proposed_method](images/diagram.svg)
 
 It consists of three main components namely:
 
