@@ -130,9 +130,7 @@ class QueenBeeDetection:
         # perform recognition
         predicted = svm.predict(data)[0]
         print(
-            "From the input image, the predicted class/label -> {}.".format(
-                predicted
-            )
+            "From the input image, the predicted class/label -> {}.".format(predicted)
         )
 
     def __mean_conf_mat(self, conf_mats):
@@ -158,7 +156,9 @@ class QueenBeeDetection:
         conf_mat_vect = []
 
         for fold in self.folds:
-            self.clf.fit(self.data_r[fold["train_index"]], self.labels[fold["train_index"]])
+            self.clf.fit(
+                self.data_r[fold["train_index"]], self.labels[fold["train_index"]]
+            )
 
             predicted = self.clf.predict(self.data_r[fold["test_index"]])
             accuracy_vect.append(
@@ -208,7 +208,7 @@ class QueenBeeDetection:
 
         n_components_max = min(len(self.data), len(self.data[0]))
         best_accuracy = 0
-        
+
         for nbr_cpnt in range(10, n_components_max, 5):
 
             pca = PCA(n_components=nbr_cpnt)
@@ -216,16 +216,24 @@ class QueenBeeDetection:
 
             accuracy, conf_mat = self.__evaluate()
 
-            if(float(accuracy) > best_accuracy):
+            if float(accuracy) > best_accuracy:
                 best_accuracy = float(accuracy)
                 best_conf_mat = conf_mat
                 best_nbr_cpnt = nbr_cpnt
 
         # print accuracy
-        print("{}% \t<- Evaluation using cross-validation (10-folds).".format(best_accuracy))
+        print(
+            "{}% \t<- Evaluation using cross-validation (10-folds).".format(
+                best_accuracy
+            )
+        )
 
         # print number of principal components
-        print("{} \t<- Optimized number of principal components.".format(str(best_nbr_cpnt).zfill(3)))   
+        print(
+            "{} \t<- Optimized number of principal components.".format(
+                str(best_nbr_cpnt).zfill(3)
+            )
+        )
 
         # print confusion matrix
         print("\n\tqueen\tworker")

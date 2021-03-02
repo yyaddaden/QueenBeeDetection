@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
     # parameters management
     args_parser = ArgumentParser(
-        description="Queen Bee Detection and Recognition by Yacine YADDADEN [ https://github.com/yyaddaden/QueenBeeDetection ]"
+        description="Queen Bee Detection and Recognition by Yacine YADDADEN [ https://github.com/yyaddaden ]"
     )
     args_parser.version = "1.0"
 
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     group = args_parser.add_argument_group("model evaluation")
     group.add_argument("-e", "--evaluation", help="evaluation", action="store_true")
     group.add_argument(
-        "-df", "--datasetfolder", metavar="", help="dataset folder", action="store"
+        "-df", "--datafolder", metavar="", help="dataset folder", action="store"
     )
 
     args = args_parser.parse_args()
@@ -42,6 +42,6 @@ if __name__ == "__main__":
     elif args.recognition:
         queenBeeDetection.recognition(args.image)
     elif args.evaluation:
-        queenBeeDetection.model_evaluation(args.datasetfolder, True)
+        queenBeeDetection.model_evaluation(args.datafolder, True)
     else:
         args_parser.print_help()
