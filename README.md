@@ -132,14 +132,18 @@ In order to use the following *source code* or *bee dataset*, please make sure t
 In **BiBtex**:
 
 ```
- @inproceedings{marquis2021,
-  title={Automatic Honey Bee Queen Presence Detection on Beehive Frames Using Machine Learning},
-  author={Marquis, Marie-Pier and Yaddaden, Yacine and Adda, Mehdi and Gingras, Guillaume and Coriveau-Côté, Michael},
-  booktitle={The 11th International Conference on Robotics, Vision, Signal Processing, and Power Applications (RoViSP)},
-  pages={1--6},
-  year={2021},
-  organization={Springer}
- }
+@InProceedings{marquis2022,
+    author="Marquis, Marie-Pier and Yaddaden, Yacine and Adda, Mehdi and Gingras, Guillaume and Corriveau-Ct{\^o}{\'e}, Michael",
+    editor="Mahyuddin, Nor Muzlifah and Mat Noor, Nor Rizuan and Mat Sakim, Harsa Amylia",
+    title="Automatic Honey Bee Queen Presence Detection  on Beehive Frames Using Machine Learning",
+    booktitle="Proceedings of the 11th International Conference on Robotics, Vision, Signal Processing and Power Applications",
+    year="2022",
+    publisher="Springer Singapore",
+    address="Singapore",
+    pages="820--826",
+    isbn="978-981-16-8129-5",
+    doi="10.1007/978-981-16-8129-5_125"
+}
 ```
 
 ## License
